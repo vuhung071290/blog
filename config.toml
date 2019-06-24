@@ -13,13 +13,13 @@ pygmentsstyle = "b2"
 pygmentscodefences = true
 pygmentscodefencesguesssyntax = true
 
-disqusShortname = "Hung Le"
+disqusShortname = "vuhung071290"
 
 [params]
     author = "Hùng Lê"
     description = "Blog cá nhân của Hùng"
     keywords = "blog,developer,personal"
-    info = "Java Dev"
+    info = "Full Stack Dev"
     avatarurl = "images/avatar.jpg"
     footercontent = ""
 
@@ -60,7 +60,7 @@ disqusShortname = "Hung Le"
 
 [languages]
     [languages.vn]
-        languagename = "Vietnamese"
+        languagename = "Tiếng Việt"
 
         [[languages.vn.menu.main]]
         name = "Bài viết"
@@ -74,12 +74,12 @@ disqusShortname = "Hung Le"
 
 
     [languages.en]
-        languagename = "Tiếng anh"
+        languagename = "English"
         title = "Hung's blog"
 
         [languages.en.params]
             author = "Hung Le"
-            info = "Java Dev"
+            info = "Full Stack Dev"
             description = "Hung's personal blog"
             keywords = "blog,developer,personal"
             footercontent = ""

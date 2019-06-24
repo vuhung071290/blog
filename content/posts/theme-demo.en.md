@@ -5,6 +5,7 @@ description = "The post demonstrates features of the coder theme."
 images = ["/images/N90.jpg"]
 math = "true"
 series = ["Theme", "Hugo"]
+disable_comments = true
 +++
 
 ## Style Demo

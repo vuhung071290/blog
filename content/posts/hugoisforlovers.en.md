@@ -12,6 +12,7 @@ categories = [
     "golang",
 ]
 series = ["Getting Started", "Hugo"]
+disable_comments = true
 +++
 
 ## Step 1. Install Hugo

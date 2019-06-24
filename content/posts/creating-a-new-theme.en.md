@@ -5,6 +5,7 @@ slug = "creating-a-new-theme"
 tags = []
 categories = []
 series = ["Theme", "Hugo"]
+disable_comments = true
 +++
 
 ## Introduction
