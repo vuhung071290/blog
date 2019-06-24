@@ -1,20 +1,23 @@
----
-title: "Serverless, xu hướng mới của điện toán đám mây"
-date: 2019-06-21
-publishdate: 2019-06-21
-lastmod: 2019-06-21
-draft: false
-tags: ["serverless", "faas"]
----
++++
+date = "2019-06-24"
+title = "Serverless, xu hướng mới của điện toán đám mây"
+description = "Serverless, xu hướng mới của điện toán đám mây."
+slug = "faas"
+tags = ["serverless", "faas"]
+categories = []
+series = ["Serverless"]
+images = ["/images/faas1.jpg", "/images/faas2.jpg", "/images/faas3.jpg", "/images/faas4.jpg", "/images/faas5.jpg", "/images/faas6.png", "/images/faas7.jpeg"]
++++
 
-{{< imgRel pathURL="img/faas1.jpg" >}}
+{{< figure src="/images/faas1.jpg" caption="" >}}
+
 - - -
 
 ## Serverless, Faas là gì
 
 Serverless là môi trường, nền tảng thực thi ứng dụng và dịch vụ mà không phải quan tâm đến máy chủ, việc phân bổ quản lý tài nguyên sẽ do nền tảng này đảm nhiệm. Nói nôm na là coder chỉ cần tập trung vào code.
 
-{{< imgRel pathURL="img/faas2.jpg" >}}
+{{< figure src="/images/faas2.jpg" caption="" >}}
 
 Serverless có hai dịch vụ chính :
 
@@ -30,7 +33,7 @@ Serverless có hai dịch vụ chính :
 
 ## Ưu nhược điểm của Serverless
 
-{{< imgRel pathURL="img/faas3.jpg" >}}
+{{< figure src="/images/faas3.jpg" caption="" >}}
 
 ### Ưu điểm
 
@@ -52,22 +55,22 @@ Serverless có hai dịch vụ chính :
 
 Như đã đề cập với Faas chúng ta deploy các function, các function này hoạt động theo kiến trúc event driven, mỗi function được định nghĩa các event-souce (một request REST, một file được upload, một record mới được insert trong database...) khi các event-source được kích hoạt,server sẽ thực thi code của function tương ứng.
 
-{{< imgRel pathURL="img/faas4.jpg" >}}
+{{< figure src="/images/faas4.jpg" caption="" >}}
 
 Hiện nay ngoài các nhà cung cấp dịch vụ Faas lớn như AWS Lambda, Azure Functions hay Google functions, còn có nhiều các [framework, tools open source](https://github.com/anaibol/awesome-serverless) đã và đang được phát triển dành cho Faas, nổi bật là các framework được
 phát triển dựa trên nền tảng của k8s như openFaas, openWhisk, Fn, Kubeless...
 
 Để  hiểu rõ cách một hệ thống serverless hoạt động, hãy xem qua kiến trúc của openFaas
 
-{{< imgRel pathURL="img/faas5.jpg" >}}
+{{< figure src="/images/faas5.jpg" caption="" >}}
 
 OpenFaas gồm hai thành phần chính:
 
-{{< imgRel pathURL="img/faas6.png" >}}
+{{< figure src="/images/faas6.png" caption="" >}}
 
 + API Gateway: chịu trách nhiệm đón các request được gọi đến hệ thống, forward các request này đến watchdog, ngoài ra nó còn collect các metrics của functions để thực hiện monitoring.
 
-{{< imgRel pathURL="img/faas7.jpeg" >}}
+{{< figure src="/images/faas7.jpeg" caption="" >}}
 
 + Watchdog: chịu trách nhiệm khởi chạy và quản lý các functions.
 

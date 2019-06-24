@@ -1,51 +1,97 @@
-baseURL = "https://vuhung071290.github.io/"
-languageCode = "en-us"
-title = "My blog"
-theme = "minimal-bootstrap-hugo-theme"
-pygmentsCodefences = true
-pygmentsStyle = "pygments"
+baseurl = "https://vuhung071290.github.io/"
+title = "Blog của Hùng"
 
-[taxonomies]
-  tag = "tags"
+theme = "hugo-coder"
 
-[permalinks]
-  post = "/:filename/"
+languagecode = "vn"
+defaultcontentlanguage = "vn"
+
+paginate = 20
+canonifyurls = true
+
+pygmentsstyle = "b2"
+pygmentscodefences = true
+pygmentscodefencesguesssyntax = true
+
+disqusShortname = "Hung Le"
 
 [params]
-  description = "Some description"
-  contentBackgroundColor = "#fff"
-  contentTextColor = "#212529"
-  contentLinkColor = "#007bff"
-  contentLinkHoverColor = "#0056b3"
-  navbarBackgroundColor = "#212529"
-  navbarLinkColor = "rgba(255, 255, 255, 0.75)"
-  navbarLinkHoverColor = "rgba(255, 255, 255, 1)"
-  wrapperMaxWidth = "800px"
-  customDateFormat = "Jan 2, 2006"
-  customCodeStyle = true
-  customBlockquoteStyle = true
-  showPostSummary = false
-  googleAnalytics = "UA-123456789-1"
-  cookieConsent = true
-  includeBootstrapJs = false
-  faviconSafariPinnedTabColor = "#5bbad5"
-  faviconMsApplicationTileColor = "#da532c"
-  faviconThemeColor = "#ffffff"
+    author = "Hùng Lê"
+    description = "Blog cá nhân của Hùng"
+    keywords = "blog,developer,personal"
+    info = "Java Dev"
+    avatarurl = "images/avatar.jpg"
+    footercontent = ""
 
-[menu]
-  [[menu.nav]]
-  name = "Posts"
-  url = "/"
-  weight = 1
-  [[menu.nav]]
-  name = "Tags"
-  url = "/tags/"
-  weight = 2
-  [[menu.nav]]
-  name = "About"
-  url = "/about/"
-  weight = 3
-  [[menu.nav]]
-  name = "RSS"
-  url = "/index.xml"
-  weight = 4
+    dateformat = "January 2, 2006"
+
+    hideCredits = false
+    hideCopyright = false
+
+    rtl = false
+
+    # Use inverted colors
+    inverted = false
+
+    # Series see also post count
+    maxSeeAlsoItems = 5
+
+    # Custom CSS
+    custom_css = []
+    
+    # Custom JS
+    custom_js = []
+
+[taxonomies]
+    category = "categories"
+    series = "series"
+    tag = "tags"
+
+[[params.social]]
+    name = "Github"
+    icon = "fab fa-github"
+    weight = 1
+    url = "https://github.com/vuhung071290/"
+[[params.social]]
+    name = "LinkedIn"
+    icon = "fab fa-linkedin"
+    weight = 2
+    url = "https://www.linkedin.com/in/le-vu-hung-43196ba2/"
+
+[languages]
+    [languages.vn]
+        languagename = "Vietnamese"
+
+        [[languages.vn.menu.main]]
+        name = "Bài viết"
+        weight = 1
+        url = "/posts/"
+
+        [[languages.vn.menu.main]]
+        name = "Dự án"
+        weight = 2
+        url = "/projects/"
+
+
+    [languages.en]
+        languagename = "Tiếng anh"
+        title = "Hung's blog"
+
+        [languages.en.params]
+            author = "Hung Le"
+            info = "Java Dev"
+            description = "Hung's personal blog"
+            keywords = "blog,developer,personal"
+            footercontent = ""
+
+        [languages.en.menu]
+
+            [[languages.en.menu.main]]
+            name = "Blog"
+            weight = 1
+            url = "/en/posts/"
+
+            [[languages.en.menu.main]]
+            name = "Projects"
+            weight = 2
+            url = "/en/projects/"
