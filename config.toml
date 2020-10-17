@@ -1,5 +1,5 @@
 baseurl = "https://vuhung071290.github.io/"
-title = "Blog của Hùng"
+title = "Blog của Culi Code"
 
 theme = "hugo-coder"
 
@@ -7,7 +7,6 @@ languagecode = "vn"
 defaultcontentlanguage = "vn"
 
 paginate = 20
-canonifyurls = true
 
 pygmentsstyle = "b2"
 pygmentscodefences = true
@@ -16,11 +15,15 @@ pygmentscodefencesguesssyntax = true
 disqusShortname = "vuhung071290"
 
 [params]
-    author = "Hùng Lê"
-    description = "Blog cá nhân của Hùng"
+    author = ""
+    description = ""
     keywords = "blog,developer,personal"
-    info = "Full Stack Dev"
+    info = ""
     avatarurl = "images/avatar.jpg"
+
+    favicon_32 = "images/favicon-32x32.png"
+    favicon_16 = "images/favicon-16x16.png"
+
     footercontent = ""
 
     dateformat = "January 2, 2006"
@@ -30,17 +33,27 @@ disqusShortname = "vuhung071290"
 
     rtl = false
 
-    # Use inverted colors
-    inverted = false
+    # Specify light/dark colorscheme
+    # Supported values:
+    # "auto" (use preference set by browser)
+    # "dark" (dark background, light foreground)
+    # "light" (light background, dark foreground) (default)
+    colorscheme = "auto"
+
+    # Hide the toggle button, along with the associated vertical divider
+    hidecolorschemetoggle = false
 
     # Series see also post count
     maxSeeAlsoItems = 5
 
     # Custom CSS
-    custom_css = []
-    
+    customCSS = []
+
+    # Custom SCSS
+    customSCSS = []
+
     # Custom JS
-    custom_js = []
+    customJS = []
 
 [taxonomies]
     category = "categories"
@@ -49,49 +62,19 @@ disqusShortname = "vuhung071290"
 
 [[params.social]]
     name = "Github"
-    icon = "fab fa-github"
+    icon = "fa fa-github"
     weight = 1
     url = "https://github.com/vuhung071290/"
 [[params.social]]
     name = "LinkedIn"
-    icon = "fab fa-linkedin"
+    icon = "fa fa-linkedin"
     weight = 2
     url = "https://www.linkedin.com/in/le-vu-hung-43196ba2/"
 
 [languages]
     [languages.vn]
-        languagename = "Tiếng Việt"
 
         [[languages.vn.menu.main]]
         name = "Bài viết"
         weight = 1
         url = "/posts/"
-
-        [[languages.vn.menu.main]]
-        name = "Dự án"
-        weight = 2
-        url = "/projects/"
-
-
-    [languages.en]
-        languagename = "English"
-        title = "Hung's blog"
-
-        [languages.en.params]
-            author = "Hung Le"
-            info = "Full Stack Dev"
-            description = "Hung's personal blog"
-            keywords = "blog,developer,personal"
-            footercontent = ""
-
-        [languages.en.menu]
-
-            [[languages.en.menu.main]]
-            name = "Blog"
-            weight = 1
-            url = "/en/posts/"
-
-            [[languages.en.menu.main]]
-            name = "Projects"
-            weight = 2
-            url = "/en/projects/"
