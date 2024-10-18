@@ -4,21 +4,17 @@ title = "Serverless, xu hướng mới của điện toán đám mây"
 description = "Serverless, xu hướng mới của điện toán đám mây."
 slug = "faas"
 tags = ["cloud", "serverless", "faas"]
-categories = ["cloud"]
+categories = []
 series = ["Serverless"]
-images = ["/images/faas1.jpg", "/images/faas2.jpg", "/images/faas3.jpg", "/images/faas4.jpg", "/images/faas5.jpg", "/images/faas6.png", "/images/faas7.jpeg"]
 disable_comments = true
+featuredImage = "/images/faas/faas1.jpg"
 +++
-
-{{< figure src="/images/faas1.jpg" caption="" >}}
-
-- - -
 
 ## Serverless, Faas là gì
 
 Serverless là môi trường, nền tảng thực thi ứng dụng và dịch vụ mà việc phân bổ quản lý tài nguyên sẽ do nền tảng này đảm nhiệm. Nói nôm na là dev chỉ cần tập trung vào code.
 
-{{< figure src="/images/faas2.jpg" caption="" >}}
+{{< figure src="/images/faas/faas2.jpg" caption="">}}
 
 Serverless có hai dịch vụ chính :
 
@@ -34,7 +30,7 @@ Serverless có hai dịch vụ chính :
 
 ## Ưu nhược điểm của Serverless
 
-{{< figure src="/images/faas3.jpg" caption="" >}}
+{{< figure src="/images/faas/faas3.jpg" caption="" >}}
 
 ### Ưu điểm
 
@@ -56,24 +52,19 @@ Serverless có hai dịch vụ chính :
 
 Như đã đề cập với Faas chúng ta deploy các function, các function này hoạt động theo kiến trúc event driven, mỗi function được định nghĩa các event-souce (một request REST, một file được upload, một record mới được insert trong database...) khi các event-source được kích hoạt, server sẽ thực thi code của function tương ứng.
 
-{{< figure src="/images/faas4.jpg" caption="" >}}
+{{< figure src="/images/faas/faas4.jpg" caption="" >}}
 
-Hiện nay ngoài các nhà cung cấp dịch vụ Faas lớn như AWS Lambda, Azure Functions hay Google functions, còn có nhiều các [framework, tools open source](https://github.com/anaibol/awesome-serverless) đã và đang được phát triển dành cho Faas, nổi bật là các framework được
-phát triển dựa trên nền tảng của k8s như openFaas, openWhisk, Fn, Kubeless...
+Hiện nay ngoài các nhà cung cấp dịch vụ Faas lớn như AWS Lambda, Azure Functions hay Google functions, còn có nhiều các [framework, tools open source](https://github.com/anaibol/awesome-serverless) đã và đang được phát triển dành cho Faas, nổi bật là các framework được phát triển dựa trên nền tảng của k8s như openFaas, openWhisk, Fn, Kubeless...
 
-Để  hiểu rõ cách một hệ thống serverless hoạt động, hãy xem qua kiến trúc của openFaas
+Để hiểu rõ cách một hệ thống serverless hoạt động, hãy xem qua kiến trúc của *openFaas*
 
-{{< figure src="/images/faas5.jpg" caption="" >}}
+{{< figure src="/images/faas/faas5.jpg" caption="" >}}
 
 OpenFaas gồm hai thành phần chính:
 
-{{< figure src="/images/faas6.png" caption="" >}}
+{{< figure src="/images/faas/faas6.png" caption="API Gateway: chịu trách nhiệm đón các request được gọi đến hệ thống, forward các request này đến watchdog, ngoài ra nó còn collect các metrics của functions để thực hiện monitoring" >}}
 
-+ API Gateway: chịu trách nhiệm đón các request được gọi đến hệ thống, forward các request này đến watchdog, ngoài ra nó còn collect các metrics của functions để thực hiện monitoring.
-
-{{< figure src="/images/faas7.jpeg" caption="" >}}
-
-+ Watchdog: chịu trách nhiệm khởi chạy và quản lý các functions.
+{{< figure src="/images/faas/faas7.jpg" caption="Watchdog: chịu trách nhiệm khởi chạy và quản lý các functions" >}}
 
 Các bước để  deploy một function trong OpenFaas:
 
@@ -81,7 +72,10 @@ Các bước để  deploy một function trong OpenFaas:
 
 2. Khi một request REST được gọi đến hệ thống, API Gateway forward các request này đến watchdog, dựa trên số lượng request API Gateway cũng gửi kèm các thông số về số lượng để Watchdog scale số pods/container
 
-3. Sau khi nhận request, Watchdog làm 3 việc, đầu tiên nó tạo các biến môi trường từ header của request, sau đó khởi chạy function bằng docker swarm với imange function đã được đăng kí trước đó, cuối cùng nó truyền nội dụng của request vào function đã tạo thông qua stdin
+3. Sau khi nhận request, Watchdog làm 3 việc
+   + đầu tiên nó tạo các biến môi trường từ header của request, 
+   + sau đó khởi chạy function bằng docker swarm với imange function đã được đăng kí trước đó
+   + cuối cùng nó truyền nội dụng của request vào function đã tạo thông qua stdin
 
 4. Sau khi function thực hiện xong, Watchdog trả kết quả về thông qua stdout, sau đó trả về cho user thông qua API Gateway
 
@@ -93,4 +87,4 @@ Các bước để  deploy một function trong OpenFaas:
 
 + Vì serverless còn rất mới mẻ nên chưa có một chuẩn chung về cách vận hành và sử dụng giữa các nhà cung cấp, việc thiếu vắng các tool hỗ trợ về debug, monitoring, các framework chưa mature cũng là trở ngại lớn.
 
-+ Hiện tại, Serverless là một xu hướng phù hợp cho những công ty đang sử dụng cloud của các ông lớn để tiết kiệm chi phí vận hành và thời gian code, với những công ty sử dụng cơ sở hạ tầng riêng hoặc private cloud có lẽ nên chờ thêm một gian để hệ sinh thái open source của serverless hoàn thiện hơn.
++ Hiện tại, Serverless là một xu hướng phù hợp cho những công ty đang sử dụng cloud của các ông lớn để tiết kiệm chi phí vận hành và thời gian code, với những công ty sử dụng cơ sở hạ tầng riêng hoặc private cloud có lẽ nên chờ thêm một gian để hệ sinh thái open source của serverless hoàn thiện hơn.s

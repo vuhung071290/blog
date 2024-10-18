@@ -1,80 +1,53 @@
 baseurl = "https://vuhung071290.github.io/"
-title = "Blog của Culi Code"
-
+title = "Culi Code"
 theme = "hugo-coder"
-
 languagecode = "vn"
 defaultcontentlanguage = "vn"
 
 paginate = 20
 
-pygmentsstyle = "b2"
-pygmentscodefences = true
-pygmentscodefencesguesssyntax = true
-
+[services]
+[services.disqus]
 disqusShortname = "vuhung071290"
+
+[markup.highlight]
+style = "github-dark"
 
 [params]
     author = ""
     description = ""
     keywords = "blog,developer,personal"
     info = ""
-    avatarurl = "images/avatar.jpg"
+    avatarurl = "images/avatar.png"
 
-    favicon_32 = "images/favicon-32x32.png"
-    favicon_16 = "images/favicon-16x16.png"
+    faviconSVG = "/img/favicon.svg"
+    favicon_32 = "/img/favicon-32x32.png"
+    favicon_16 = "/img/favicon-16x16.png"
 
-    footercontent = ""
-
-    dateformat = "January 2, 2006"
-
-    hideCredits = false
-    hideCopyright = false
-
-    rtl = false
-
-    # Specify light/dark colorscheme
-    # Supported values:
-    # "auto" (use preference set by browser)
-    # "dark" (dark background, light foreground)
-    # "light" (light background, dark foreground) (default)
-    colorscheme = "auto"
-
-    # Hide the toggle button, along with the associated vertical divider
+    colorScheme = "auto"
     hidecolorschemetoggle = false
-
-    # Series see also post count
-    maxSeeAlsoItems = 5
-
-    # Custom CSS
-    customCSS = []
-
-    # Custom SCSS
-    customSCSS = []
-
-    # Custom JS
-    customJS = []
 
 [taxonomies]
     category = "categories"
     series = "series"
     tag = "tags"
+    author = "authors"
 
 [[params.social]]
     name = "Github"
-    icon = "fa fa-github"
+    icon = "fa-brands fa-github fa-2x"
     weight = 1
     url = "https://github.com/vuhung071290/"
 [[params.social]]
     name = "LinkedIn"
-    icon = "fa fa-linkedin"
+    icon = "fa-brands fa-linkedin fa-2x"
     weight = 2
-    url = "https://www.linkedin.com/in/le-vu-hung-43196ba2/"
+    url = "https://www.linkedin.com/in/l%C3%AA-v%C5%A9-h%C3%B9ng-43196ba2/"
 
 [languages]
     [languages.vn]
 
         [[languages.vn.menu.main]]
-        name = "Bài viết"
+        name = "POSTS"
         weight = 1
         url = "/posts/"
