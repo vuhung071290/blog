@@ -14,11 +14,11 @@ disqusShortname = "vuhung071290"
 style = "github-dark"
 
 [params]
-    author = ""
+    author = "Hung Le"
     description = ""
     keywords = "blog,developer,personal"
     info = ""
-    avatarurl = "images/avatar.png"
+    avatarurl = "images/avatar.jpg"
 
     faviconSVG = "/img/favicon.svg"
     favicon_32 = "/img/favicon-32x32.png"
