@@ -10,7 +10,7 @@ disable_comments = true
 featuredImage = "/images/handling-timezone/timezones-for-developers.png"
 +++
 
-Trong lập trình chúng ta phải làm việc với **DateTime** khá nhiều, trong đó **TimeZone** cũng là một vấn đề nan giải, bài viết này là tổng hợp những kinh nghiệm khi làm việc với kiểu dữ liệu này.
+Trong lập trình chúng ta phải làm việc với **DateTime** khá nhiều, trong đó [TimeZone]((https://vuhung071290.github.io/posts/timezone/#3-timezone)) cũng là một vấn đề nan giải, bài viết này là tổng hợp những kinh nghiệm khi làm việc với kiểu dữ liệu này.
 
 ## Qui chuẩn quốc tế khi biểu diễn DateTime
 
@@ -26,7 +26,7 @@ Trong lập trình chúng ta phải làm việc với **DateTime** khá nhiều,
   > 2021-01-17T19:18:46+02:00
 
 [IANA Time Zone Database](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones) Hay còn gọi là tz database, là một bộ database tổng hợp thông tin của toàn bộ múi giờ trên thế giới, được quản lý bởi tổ chức ICANN (Nếu bạn chưa biết thì múi giờ có thể thay đổi vì địa chính trị, hoặc theo mùa do áp dụng giờ [DST](https://vuhung071290.github.io/posts/timezone/#32-gi%e1%bb%9d-dst-daylight-saving-time)).
-Trong tz database, một [múi giờ](https://vuhung071290.github.io/posts/timezone/#3-timezone) sẽ có tên gọi dựa trên vị trí địa lý của nó, theo dạng Area/Location, trong đó area là tên của lục địa hoặc đại dương, location là tên của thành phố hoặc hòn đảo.
+Trong tz database, một múi giờ sẽ có tên gọi dựa trên vị trí địa lý của nó, theo dạng Area/Location, trong đó area là tên của lục địa hoặc đại dương, location là tên của thành phố hoặc hòn đảo.
 
 > Múi giờ ở thành phố Hồ Chí Minh có tên là Asia/Ho_Chi_Minh
 Múi giờ ở Auckland (New Zealand) có tên là Pacific/Auckland
