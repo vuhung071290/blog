@@ -10,7 +10,7 @@ disable_comments = true
 featuredImage = "/images/handling-timezone/timezones-for-developers.png"
 +++
 
-Trong lập trình chúng ta phải làm việc với **DateTime** khá nhiều, trong đó [TimeZone]((https://vuhung071290.github.io/posts/timezone/#3-timezone)) cũng là một vấn đề nan giải, bài viết này là tổng hợp những kinh nghiệm khi làm việc với kiểu dữ liệu này.
+Trong lập trình chúng ta phải làm việc với **DateTime** khá nhiều, trong đó [TimeZone](https://vuhung071290.github.io/posts/timezone/#3-timezone) cũng là một vấn đề nan giải, bài viết này là tổng hợp những kinh nghiệm khi làm việc với kiểu dữ liệu này.
 
 ## Qui chuẩn quốc tế khi biểu diễn DateTime
 
