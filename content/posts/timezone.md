@@ -12,7 +12,7 @@ featuredImage = "/images/timezone/World_Time_Zones_Map.png"
 
 ## 1. Giờ GMT (Greenwich Mean Time)
 ### 1.1 Lịch sử hình thành giờ GMT
-Trước năm 1650, con người đã tự tìm hiệu về quy luật vận hành ngày đêm của mặt trời và trái đất. Cho đến năm 1650, người Anh đã chuyển quy luật này thành thời gian chính thống trên chiếc đồng hồ quả lắc.
+Trước năm 1650, con người đã tự tìm hiểu về quy luật vận hành ngày đêm của mặt trời và trái đất. Cho đến năm 1650, người Anh đã chuyển quy luật này thành thời gian chính thống trên chiếc đồng hồ quả lắc.
 
 John Flamsteed đã phát minh ra bộ quy đổi giữa thời gian của mặt trời sang thời gian thực trên đồng hồ và xuất bản chúng vào năm 1670. Sau đó, ông trở thành Nhà thiên văn học Hoàng gia đầu tiên và chuyển về đài thiên văn Greenwich để tiếp tục nghiên cứu và làm việc.
 
