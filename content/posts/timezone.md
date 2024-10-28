@@ -1,7 +1,7 @@
 +++
 date = "2020-01-25"
-title = "Lịch sử ra đời của hệ thống giờ quốc tế GMT, DST, UTC"
-description = "Lịch sử ra đời của hệ thống giờ quốc tế GMT, DST, UTC"
+title = "Lịch sử ra đời của giờ quốc tế GMT, UTC"
+description = "Lịch sử ra đời của giờ quốc tế GMT, UTC"
 slug = "timezone"
 tags = ["miscellaneous", "timezone"]
 categories = []
@@ -10,15 +10,8 @@ disable_comments = true
 featuredImage = "/images/timezone/World_Time_Zones_Map.png"
 +++
 
-# Table of contents
-1. [Giờ GMT (Greenwich Mean Time)](#1-giờ-gmt-greenwich-mean-time)
-2. [Giờ DST (Daylight Saving Time)](#2-giờ-dst-daylight-saving-time)
-3. [Giờ UTC (Coordinated Universal Time)](#3-giờ-utc-coordinated-universal-time)
-4. [So sánh giờ UTC và GMT](#4-so-sánh-giờ-utc-và-gmt)
-
-
 ## 1. Giờ GMT (Greenwich Mean Time)
-### 1.1 Hiểu rõ về lịch sử hình thành giờ GMT
+### 1.1 Lịch sử hình thành giờ GMT
 Trước năm 1650, con người đã tự tìm hiệu về quy luật vận hành ngày đêm của mặt trời và trái đất. Cho đến năm 1650, người Anh đã chuyển quy luật này thành thời gian chính thống trên chiếc đồng hồ quả lắc.
 
 John Flamsteed đã phát minh ra bộ quy đổi giữa thời gian của mặt trời sang thời gian thực trên đồng hồ và xuất bản chúng vào năm 1670. Sau đó, ông trở thành Nhà thiên văn học Hoàng gia đầu tiên và chuyển về đài thiên văn Greenwich để tiếp tục nghiên cứu và làm việc.
@@ -49,7 +42,39 @@ Do đó, kinh tuyến gốc tại Greenwich trở thành điểm gốc, trung t�
 
 Airy Transit Circle (kính viễn vọng) là thiết bị xác định kinh tuyến gốc của thế giới do nhà thiên văn học Hoàng gia George Biddell Airy thiết kế.
 
-## 2. Giờ DST (Daylight Saving Time)
+## 2. Giờ UTC (Coordinated Universal Time)
+#### 2.1 UTC ra đời để khắc phục nhược điểm của GMT
+Giờ GMT là một hệ thống giờ chuẩn, có quy luật. Tuy nhiên, do vòng quay của trái đất không đều và có xu hướng chậm lại nên gây ra một số vấn đề về sự chính xác của giờ GMT.
+
+Do đó, vào 1 tháng 1 năm 1972, Giờ phối hợp quốc tế (UTC) được sử dụng làm chuẩn thời gian quốc tế thay thế cho giờ GMT. UTC được đo bằng giờ nguyên tử quốc tế (TAI) do phòng Cân Đo Quốc tế thực hiện trên hàng trăm đồng hồ nguyên tử xezi khắp thế giới với sự thay đổi linh hoạt đến từng giây đề bù đắp cho sự vận động khác thường của trái đất.
+
+{{< figure src="/images/timezone/Gio-UTC.jpg" caption="Giờ UTC">}}
+
+Ngày nay, UTC trở thành một tiêu chuẩn thời gian quan trọng và đáng tin cậy cho các hoạt động quốc tế, nhất là trong lĩnh vực giao thông vận tải, thông tin liên lạc, và khoa học. UTC cũng được sử dụng trong các chuẩn Internet và World Wide Web.
+
+#### 2.2 So sánh giờ GMT và UTC
+
+{{< figure src="/images/timezone/utc-gmt.jpg" caption="GMT vs UTC">}}
+
+| Tiêu chí         | Giờ GMT                                                                                                                                                                                    | Giờ UTC                                                                                                   |
+|------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------|
+| Tên gọi          | GMT (Greenwich Mean Time)                                                                                                                                                                  | UTC (Coordinated Universal Time)                                                                          |
+| Nguồn gốc        | Được xác định dựa trên thời gian trung bình tại Đài quan sát Hoàng gia Greenwich (nước Anh), với tính toán dựa trên chuyển động của Trái Đất quanh Mặt Trời.                               | Được phát triển từ thời gian nguyên tử quốc tế (TAI), dựa trên các đồng hồ nguyên tử có độ chính xác cao. |
+| Độ chính xác     | Ít chính xác hơn UTC, không điều chỉnh theo giây nhuận                                                                                                                                     | Rất chính xác, được điều chỉnh bằng giây nhuận để duy trì sự chính xác với thời gian thiên văn            |
+| Sử dụng hiện nay | Chủ yếu được sử dụng ở Anh và một số quốc gia thuộc Khối Thịnh vượng chung. GMT từng là chuẩn thời gian quốc tế trước khi UTC ra đời và vẫn được sử dụng trong một số lĩnh vực nhất định.  | Được sử dụng rộng rãi toàn cầu như một chuẩn thời gian quốc tế                                            |
+| Mục đích chính   | Lịch sử là chuẩn thời gian tại Greenwich                                                                                                                                                   | Đồng bộ hóa thời gian toàn cầu                                                                            |
+
+Sự khác biệt chính giữa UTC và GMT nằm ở cách thức xác định thời gian: UTC sử dụng công nghệ hiện đại với đồng hồ nguyên tử, trong khi GMT dựa trên quan sát chuyển động tự nhiên của Trái Đất. Như vậy, UTC đại diện cho sự chính xác và ổn định khoa học, còn GMT gắn liền với lịch sử và truyền thống.
+Tuy nhiên sự chênh lệch giữa UTC và GMT là không nhiều, do đó một số nơi vẫn dùng chuẩn GMT để tính múi giờ.
+
+## 3. Timezone
+#### 3.1 Múi giờ là gì
++ Một múi giờ là 1 vùng trên Trái Đất mà người ta quy ước sử dụng cùng 1 thời gian tiêu chuẩn, thông thường được nói đến như là giờ địa phương. Về lý thuyết, các đồng hồ tại vùng này luôn chỉ cùng 1 thời gian
++ Múi giờ thường được đặt tên theo khu vực (ICT — Indochina Time) hoặc theo tên của quốc gia (JST — Japan Standard Time)
++ Thoạt nhìn thì sẽ nghĩ múi giờ chủ yếu phụ thuộc vào địa lý nhưng thật ra nó còn phụ thuộc vào cả tình hình kinh tế, chính trị của một nước, và cũng có thể thay đổi theo mùa (nếu áp dụng DST)
++ Trong chuẩn UTC một múi giờ được thể hiện bằng độ lệch so với giờ chuẩn UTC, độ lệch này được gọi là UTC offset, ví dụ múi giờ ICT — Indochina Time có UTC offset = UTC+7
+
+#### 3.2 Giờ DST (Daylight Saving Time)
 DST là "Giờ tiết kiệm ánh sáng ban ngày" hay "Quy ước giờ mùa hè". DST là việc điều chỉnh thời gian trên đồng hồ, thường là tiến lên một giờ vào mùa xuân và lùi lại một giờ vào mùa thu.
 
 {{< figure src="/images/timezone/Gio-DST.jpg" caption="Giờ DST">}}
@@ -68,30 +93,4 @@ Hiện nay đã có hơn 70 quốc gia trên thế giới áp dụng DST. Mỗi 
 + Châu Á: Israel, Nhật Bản, Hàn Quốc
 + Châu Đại Dương: Úc, New Zealand
 
-Giờ GMT sẽ thay đổi khi áp dụng DST, ví dụ múi giờ chuẩn của Sydney là GMT+10 (Australian Eastern Standard Time – AEST). Tuy nhiên, khi áp dụng DST, múi giờ tại Sydney sẽ là GMT+11 (Australian Eastern Daylight Time – AEDT)
-
-## 3. Giờ UTC (Coordinated Universal Time)
-Giờ GMT là một hệ thống giờ chuẩn, có quy luật. Tuy nhiên, do vòng quay của trái đất không đều và có xu hướng chậm lại nên gây ra một số vấn đề về sự chính xác của giờ GMT.
-
-Do đó, vào 1 tháng 1 năm 1972, Giờ phối hợp quốc tế (UTC) đã được sử dụng làm chuẩn thời gian quốc tế thay thế cho giờ GMT. UTC được đo bằng giờ nguyên tử quốc tế (TAI) do phòng Cân Đo Quốc tế thực hiện trên hàng trăm đồng hồ nguyên tử xezi khắp thế giới với sự thay đổi linh hoạt đến từng giây đề bù đắp cho sự vận động khác thường của trái đất.
-
-{{< figure src="/images/timezone/Gio-UTC.jpg" caption="Giờ UTC">}}
-
-UTC không thay đổi theo mùa, nếu một địa phương áp dụng DST, thời gian địa phương của họ sẽ thay đổi so với UTC trong những tháng đó, nhưng UTC luôn giữ nguyên. Qua đó làm cho UTC trở thành một tiêu chuẩn thời gian quan trọng và đáng tin cậy cho các hoạt động quốc tế, nhất là trong lĩnh vực giao thông vận tải, thông tin liên lạc, và khoa học. UTC cũng được sử dụng trong các chuẩn Internet và World Wide Web. Nhiều hãng cũng sản xuất đồng hồ theo chuẩn UTC để phục vụ cho phi công, người du lịch, thương nhân,…
-
-Tuy nhiên, sự khác biệt giữa GMT và giờ UTC là không nhiều, nên nhiều quốc gia trên thế giới vẫn sử dụng chuẩn GMT và chỉ sử dụng UTC cho những trường hợp cần đo thời gian chính xác đến từng giây.
-
-## 4. So sánh giờ UTC và GMT
-
-{{< figure src="/images/timezone/utc-gmt.jpg" caption="UTC vs GMT">}}
-
-| Tiêu chí           | Giờ UTC                                                                                                    | Giờ GMT                                                                                                                                                                                   |
-|--------------------|------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Tên gọi            | UTC (Coordinated Universal Time)                                                                           | GMT (Greenwich Mean Time)                                                                                                                                                                 |
-| Nguồn gốc          | Được phát triển từ thời gian nguyên tử quốc tế (TAI), dựa trên các đồng hồ nguyên tử có độ chính xác cao.  | Được xác định dựa trên thời gian trung bình tại Đài quan sát Hoàng gia Greenwich (nước Anh), với tính toán dựa trên chuyển động của Trái Đất quanh Mặt Trời.                              |
-| Độ chính xác       | Rất chính xác, được điều chỉnh bằng giây nhuận để duy trì sự chính xác với thời gian thiên văn             | Ít chính xác hơn, không điều chỉnh theo giây nhuận                                                                                                                                        |
-| Sử dụng hiện nay   | Được sử dụng rộng rãi toàn cầu như một chuẩn thời gian quốc tế                                             | Chủ yếu được sử dụng ở Anh và một số quốc gia thuộc Khối Thịnh vượng chung. GMT từng là chuẩn thời gian quốc tế trước khi UTC ra đời và vẫn được sử dụng trong một số lĩnh vực nhất định. |
-| Mục đích chính     | Đồng bộ hóa thời gian toàn cầu                                                                             | Lịch sử là chuẩn thời gian tại Greenwich                                                                                                                                                  |
-| Thời gian duy trì  | Liên tục, không thay đổi theo mùa                                                                          | Có thể thay đổi theo mùa ở một số khu vực (giờ mùa đông và mùa hè)                                                                                                                        |
-
-Sự khác biệt chính giữa UTC và GMT nằm ở cách thức xác định thời gian: UTC sử dụng công nghệ hiện đại với đồng hồ nguyên tử, trong khi GMT dựa trên quan sát chuyển động tự nhiên của Trái Đất. Như vậy, UTC đại diện cho sự chính xác và ổn định khoa học, còn GMT gắn liền với lịch sử và truyền thống.
+{{< figure src="/images/timezone/Sydney_DST.png" caption="Múi giờ chuẩn của Sydney là UTC+10 (Australian Eastern Standard Time – AEST). Tuy nhiên, khi áp dụng DST, múi giờ tại Sydney sẽ là UTC+11 (Australian Eastern Daylight Time – AEDT)">}}
