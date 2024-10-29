@@ -52,7 +52,7 @@ Do đó, vào 1 tháng 1 năm 1972, Giờ phối hợp quốc tế (UTC) đượ
 
 Ngày nay, UTC trở thành một tiêu chuẩn thời gian quan trọng và đáng tin cậy cho các hoạt động quốc tế, nhất là trong lĩnh vực giao thông vận tải, thông tin liên lạc, và khoa học. UTC cũng được sử dụng trong các chuẩn Internet và World Wide Web.
 
-#### 2.2 So sánh giờ GMT và UTC
+#### So sánh giờ GMT và UTC
 
 {{< figure src="/images/timezone/utc-gmt.jpg" caption="GMT vs UTC">}}
 
