@@ -90,9 +90,6 @@ Hiện nay đã có hơn 70 quốc gia trên thế giới áp dụng DST. Mỗi 
 + Bắc Mỹ: Hoa Kỳ, Canada, Mexico
 + Châu Âu: Hầu hết các quốc gia châu Âu, từ Vương quốc Anh, Pháp, Đức đến Ý, Tây Ban Nha
 + Nam Mỹ: Brazil, Argentina, Chile
-+ Châu Phi: Namibia, Nam Phi, Maroc
-+ Châu Á: Israel, Nhật Bản, Hàn Quốc
-+ Châu Đại Dương: Úc, New Zealand
 
 {{< figure src="/images/timezone/Sydney_DST.png" caption="Múi giờ chuẩn của Sydney là UTC+10 (Australian Eastern Standard Time – AEST). Tuy nhiên, khi áp dụng DST, múi giờ tại Sydney sẽ là UTC+11 (Australian Eastern Daylight Time – AEDT)">}}
 
