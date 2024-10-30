@@ -92,5 +92,4 @@ Hiện nay đã có hơn 70 quốc gia trên thế giới áp dụng DST. Mỗi 
 
 ## Kết
 Sự khác biệt chính giữa UTC và GMT nằm ở cách thức xác định thời gian, UTC sử dụng công nghệ hiện đại với đồng hồ nguyên tử, trong khi GMT dựa trên quan sát chuyển động tự nhiên của Trái Đất. Như vậy, UTC đại diện cho sự chính xác và ổn định khoa học, còn GMT gắn liền với lịch sử và truyền thống.
-
 Tuy nhiên sự chênh lệch giữa UTC và GMT là không nhiều, do đó một số nơi vẫn dùng chuẩn GMT để tính múi giờ.
