@@ -22,11 +22,11 @@ Tại Greenwich, John Flamsteed đã cài đặt đồng hồ quả lắc, đặ
 
 #### GMT và sự phân chia múi giờ dựa trên kinh độ
 
-Dữ liệu này cung cấp thời gian theo chuẩn các vị trí trên trái đất theo kinh độ. Điều này giúp các nhà thám hiểm có thể tìm ra vị trí của họ trên biển dễ dàng hơn. Từ đây, các thủy thủ bắt đầu giữ cho mình những chiếc đồng hồ với chế độ tra giờ quốc tế dựa theo múi giờ GMT. Theo đó, người ta có thể dễ dàng tính toán vị trí của họ dựa theo vị trí chuẩn là kinh tuyến Greenwich (kinh độ 0 ° theo quy ước). Chính phát minh này đã khiến giờ GMT trở thành giờ chuẩn, được sử dụng phổ biến vào những thế kỷ sau đó.
+Nhà thiên văn học Hoàng gia Nevil Maskelyne đã phổ biến giờ GMT đến nhiều dân cư từ năm 1700. Năm 1767, Maskelyne đã xuất bản cuốn Hải lý học về sự quan trọng của việc xét các yếu tố kinh độ khi tính giờ GMT. Dữ liệu này cung cấp thời gian theo chuẩn các vị trí trên trái đất theo kinh độ. Điều này giúp các nhà thám hiểm có thể tìm ra vị trí của họ trên biển dễ dàng hơn.
+
+Từ đây, các thủy thủ bắt đầu giữ cho mình những chiếc đồng hồ với chế độ tra giờ quốc tế dựa theo múi giờ GMT. Theo đó, người ta có thể dễ dàng tính toán vị trí của họ dựa theo vị trí chuẩn là kinh tuyến Greenwich (kinh độ 0° theo quy ước). Chính phát minh này đã khiến giờ GMT trở thành giờ chuẩn, được sử dụng phổ biến vào những thế kỷ sau đó.
 
 {{< figure src="/images/timezone/phan-chia-mui-gio-theo-kinh-do-gmt.jpg" caption="Sự phân chia múi giờ theo kinh độ GMT">}}
-
-> Nhà thiên văn học Hoàng gia Nevil Maskelyne đã phổ biến giờ GMT đến nhiều dân cư từ năm 1700. Năm 1767, Maskelyne đã xuất bản cuốn Hải lý học về sự quan trọng của việc xét các yếu tố kinh độ khi tính giờ GMT.
 
 Cho đến giữa thế kỷ 19, nhiều nơi vẫn sử dụng giờ địa phương mà không theo một quy chuẩn, quy định quốc gia nào. Tuy nhiên, 1850 và 1860 sự mở rộng của hệ thống đường sắt và mạng lưới liên lạc đã khiến người dân cảm thấy việc cần thiết của một hệ thống giờ chuẩn trên toàn cầu.
 
@@ -67,13 +67,13 @@ Ngày nay, UTC trở thành một tiêu chuẩn thời gian quan trọng và đ�
 
 ## Timezone (Múi giờ)
 #### Múi giờ là gì
-Ở trên chúng ta đề cập đến việc dùng chuẩn GMT hoặc UTC để xác định múi giờ, vậy cụ thể múi giờ là gì? Một múi giờ là 1 vùng trên Trái Đất mà người ta quy ước sử dụng cùng 1 thời gian tiêu chuẩn, thông thường được nói đến như là giờ địa phương. Về lý thuyết, các đồng hồ tại vùng này luôn chỉ cùng 1 thời gian
+Ở trên chúng ta đề cập đến việc dùng chuẩn GMT hoặc UTC để xác định múi giờ, vậy cụ thể múi giờ là gì? Một múi giờ là 1 vùng trên Trái Đất mà người ta quy ước sử dụng cùng 1 thời gian tiêu chuẩn, thông thường được nói đến như là giờ địa phương. Về lý thuyết, các đồng hồ tại vùng này luôn chỉ cùng 1 thời gian.
 
-Múi giờ thường được đặt tên theo khu vực (ICT - Indochina Time) hoặc theo tên của quốc gia (JST - Japan Standard Time)
+Múi giờ thường được đặt tên theo khu vực (ICT - Indochina Time) hoặc theo tên của quốc gia (JST - Japan Standard Time).
 
-Thoạt nhìn thì sẽ nghĩ múi giờ chủ yếu phụ thuộc vào địa lý nhưng thật ra nó còn phụ thuộc vào cả tình hình kinh tế, chính trị của một nước, và nó cũng có thể thay đổi theo mùa (nếu áp dụng DST)
+Thoạt nhìn thì sẽ nghĩ múi giờ chủ yếu phụ thuộc vào địa lý nhưng thật ra nó còn phụ thuộc vào cả tình hình kinh tế, chính trị của một nước, và nó cũng có thể thay đổi theo mùa (nếu áp dụng DST).
 
-Trong chuẩn UTC một múi giờ được thể hiện bằng độ lệch so với giờ chuẩn UTC, độ lệch này được gọi là UTC offset, ví dụ múi giờ ICT - Indochina Time có UTC offset là UTC+7
+Trong chuẩn UTC một múi giờ được thể hiện bằng độ lệch so với giờ UTC, độ lệch này được gọi là UTC Offset, ví dụ múi giờ ICT - Indochina Time có UTC Offset là UTC+7.
 
 #### Giờ DST (Daylight Saving Time)
 DST là "Giờ tiết kiệm ánh sáng ban ngày" hay "Quy ước giờ mùa hè". DST là việc điều chỉnh thời gian trên đồng hồ, thường là tiến lên một giờ vào mùa xuân và lùi lại một giờ vào mùa thu.
@@ -86,13 +86,11 @@ Việc điều chỉnh thời gian này giúp chúng ta tận dụng tối đa �
 + Tiếp theo, DST còn góp phần cải thiện sức khỏe. Khi có thêm thời gian hoạt động ngoài trời vào buổi sáng, con người sẽ được tăng cường sức khỏe và tinh thần. Ánh sáng mặt trời giúp cơ thể sản xuất vitamin D, có vai trò quan trọng trong việc hấp thụ canxi, tốt cho xương và hệ miễn dịch.
 + Cuối cùng, DST cũng giúp đảm bảo an toàn giao thông. Việc tăng khả năng quan sát vào buổi tối giúp giảm nguy cơ tai nạn giao thông. Theo nghiên cứu của Đại học California, Berkeley, DST giúp giảm 13% tai nạn giao thông xảy ra vào buổi tối.
 
-Hiện nay đã có hơn 70 quốc gia trên thế giới áp dụng DST. Mỗi quốc gia có lịch áp dụng DST riêng, thường bắt đầu vào tháng 3 và kết thúc vào tháng 11, cụ thể như sau:
-+ Bắc Mỹ: Hoa Kỳ, Canada, Mexico
-+ Châu Âu: Hầu hết các quốc gia châu Âu, từ Vương quốc Anh, Pháp, Đức đến Ý, Tây Ban Nha
-+ Nam Mỹ: Brazil, Argentina, Chile
+Hiện nay đã có hơn 70 quốc gia trên thế giới áp dụng DST. Mỗi quốc gia có lịch áp dụng DST riêng, thường bắt đầu vào tháng 3 và kết thúc vào tháng 11.
 
 {{< figure src="/images/timezone/Sydney_DST.png" caption="Múi giờ chuẩn của Sydney là UTC+10 (Australian Eastern Standard Time – AEST). Tuy nhiên, khi áp dụng DST, múi giờ tại Sydney sẽ là UTC+11 (Australian Eastern Daylight Time – AEDT)">}}
 
 ## Kết
 Sự khác biệt chính giữa UTC và GMT nằm ở cách thức xác định thời gian, UTC sử dụng công nghệ hiện đại với đồng hồ nguyên tử, trong khi GMT dựa trên quan sát chuyển động tự nhiên của Trái Đất. Như vậy, UTC đại diện cho sự chính xác và ổn định khoa học, còn GMT gắn liền với lịch sử và truyền thống.
+
 Tuy nhiên sự chênh lệch giữa UTC và GMT là không nhiều, do đó một số nơi vẫn dùng chuẩn GMT để tính múi giờ.
